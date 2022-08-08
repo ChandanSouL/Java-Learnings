@@ -18,3 +18,6 @@ public class Main {
         }
     }
 }
+//Largest element is pushed to last for ascending order
+//smallest element is pushed to last for ascending order
+//we use arr.length-i-1 to not to compare the arr[i]th element with the last(already sorted) element.
