@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main {
+    public static void main(String args[]){
+         int arr[]= {7,8,3,1,2};
+         //insertion sort
+        for(int i=0;i<arr.length;i++){
+            int current = arr[i];
+            int j=i-1;
+            while(j >= 0 && current < arr[j]){
+                arr[j+1] = arr[j];
+                j--;
+            }
+            arr[j+1] = current;
+
+        }
+        for(int i=0;i<arr.length;i++){
+            System.out.println(arr[i]);
+        }
+    }
+}
+//here we divide the array into sorted and unsorted
+//time complexity O(n^2)
+//take the first ele as current and variable j as i-1
+//while we check for index doesnt becomes zero i,e for arrayoutofbounds exception using while loop
+//we replace the sorted elements in current index and we decrease the jth (unsorted array) index 
